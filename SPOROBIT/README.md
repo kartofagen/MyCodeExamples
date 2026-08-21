@@ -17,7 +17,6 @@
 - **Unity 6000.0.28f1** (Unity 6)
 - **Render Pipeline:** Universal Render Pipeline (URP) 17.0.3
 - **Input:** Unity Input System 1.11.2
-- **Навигация:** Unity AI Navigation (NavMesh) 2.0.4
 - **UI:** UGUI 2.0.0, TextMesh Pro
 - **Аудио/MIDI:** Melanchall.DryWetMIDI - синхронизация геймплея с музыкой в реальном времени
 
@@ -27,14 +26,13 @@
 
 - **Игрок и управление**
    - `PlayerController.cs`, `BodyRotation.cs`, `FollowCursor.cs` - управление и вращение персонажа
-   - `CameraShake.cs` - тряска камеры при попаданиях/атаках
 
 - **Боевая система**
    - `Shield.cs` - механика щита
    - `Projectile.cs`, `ProjectileMovement.cs` - снаряды и их движение
    - `Enemy.cs`, `EnemyHealth.cs`, `EnemyMovement.cs`, `EnemyWaves.cs`, `EnemiesManager.cs` - ИИ противников, волны врагов, менеджмент спавна
    - `BranchHealth.cs`, `BranchHealthManager.cs` - система здоровья веток мицелия
-   - `MyceliumEater.cs` - механика поедания мицелия врагами
+   - `MyceliumEater.cs` - механика поедания врагов мицелием
 
 - **Синхронизация с музыкой (ритм-механики)**
    - `MusicManager.cs`, `AudioRepeat.cs` - управление музыкальным сопровождением
@@ -50,7 +48,7 @@
 
 Также занимался частью визуального контента (спрайты/изображения) и сборкой билда проекта.
 
-> Часть кода в модуле роста мицелия (`Micelium/`) - совместная работа с соавтором (Alexey Lisov), который отвечал за процедурную генерацию 3D-мицелия (`MyceliumTree3D`, `TubeMeshBuilder`).
+> Код в модуле роста мицелия (`Micelium/`) - работа соавтора (Alexey Lisov), который отвечал за процедурную генерацию 3D-мицелия (`MyceliumTree3D`, `TubeMeshBuilder`).
 
 ## Инструкция по запуску
 
@@ -62,7 +60,7 @@
    Открыть её и нажать **Play**.
 3. Порядок сцен в билде: `Menu -> Main -> Credits`.
 
-**Требования:** ПК с поддержкой URP; проект использует нативные библиотеки Melanchall.DryWetMIDI (Windows/macOS x64).
+**Требования:** Проект использует библиотеку Melanchall.DryWetMIDI (Windows/macOS x64).
 
 <img src="screen1.png" width="300">
 <img src="screen2.png" width="300">
